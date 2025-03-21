@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidrçaria Cristal Vidros <img src="img1.jpeg" alt="Vidrçaria"></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        body {
+            background-image: url(img1.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .card {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 80%;
+            box-shadow: 0 4px 10px rgba(219, 219, 219, 0.918);
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        .botoes {
+            position: fixed;
+            bottom: 60px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            z-index: 10;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            padding: 20px 30px;
+            font-size: 1.1rem;
+            color: white;
+            background-color: burlywood;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .logo{
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background-color: #deb887;
+            transform: scale(1.05);
+        }
+
+        .btn:active {
+            background-color: #d2a96b;
+        }
+
+        footer.rodape {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 1rem;
+            color: #777;
+            z-index: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>O especialista em vidros temperados</h1>
+            <p>Trabalhamos com a instalação de portas e janelas em vidros temperados - Box de banheiro - Espelhos em
+                vidros temperados.</p>
+        </div>
+    </div>
+    <div class="botoes">
+        <a href="resultados.html" class="btn">Ver resultados</a>
+        <a href="https://wa.me/5538984268482?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento !" class="btn">Entrar em contato
+            <img src="whatsapp-icon.jpg" alt="Whatsapp" class="logo">
+        </a>
+    </div>
+    <footer class="rodape">
+        <p>"Porque para Deus nada é impossível"</p>
+    </footer>
+</body>
+
+</html>
