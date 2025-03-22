@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidraçaria Cristal Vidros | Vidros Temperados, Boxes e Espelhos</title>
+    <meta name="description" content="Especialistas em vidros temperados: instalação de portas, janelas, box para banheiro e espelhos. Solicite seu orçamento conosco via whatsapp">
+    <meta name="keywords" content="vidros temperados, box de banheiro, espelhos, portas de vidro, janelas de vidro, vidraçaria, instalação de vidros, cristal vidros, vidraçaria em Montes Claros Minas Gerais, vidraçaria em Moc">
+    <meta name="author" content="Vidraçaria Cristal Vidros">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-image: url(img1.jpeg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Overlay para contraste */
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .conteudo {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+            margin-top: 60px;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        .conteudo h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .conteudo h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #00c9a7;
+        }
+
+        .botoes {
+            position: fixed;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            z-index: 10;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 35px;
+            font-size: 1.1rem;
+            color: white;
+            background: linear-gradient(45deg, #00c9a7, #00897b);
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            width: 250px;
+            text-align: center;
+            opacity: 0;
+        }
+
+        .botoes .btn:nth-child(1) {
+            animation: buttonFade 1.2s 0.3s ease forwards;
+        }
+
+        .botoes .btn:nth-child(2) {
+            animation: buttonFade 1.2s 0.5s ease forwards;
+        }
+
+        .btn:hover {
+            background: linear-gradient(45deg, #4f4f4f, #2f2f2f);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        footer.rodape {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            z-index: 10;
+            animation: fadeIn 2s ease;
+        }
+
+        /* Animações */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translate(-50%, 40px);
+            }
+            to {
+                opacity: 1;
+                transform: translate(-50%, 0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes buttonFade {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media(max-width: 600px) {
+            .btn {
+                width: 80%;
+                padding: 15px 20px;
+                font-size: 1rem;
+            }
+
+            .conteudo h1 {
+                font-size: 1.6rem;
+            }
+
+            .conteudo h2 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="conteudo">
+        <h1>O especialista em vidros temperados</h1>
+        <h2>Portas • Janelas • Box • Espelhos</h2>
+    </div>
+    <div class="botoes">
+        <a href="resultados.html" class="btn">Ver resultados</a>
+        <a href="https://wa.me/5538984268482?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento!" class="btn">Entrar em contato</a>
+    </div>
+    <footer class="rodape">
+        <p>"Porque para Deus nada é impossível"</p>
+    </footer>
+</body>
+
+</html>
