@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidraçaria Cristal Vidros | Vidros Temperados, Boxes e Espelhos</title>
+    <meta name="description" content="Especialistas em vidros temperados: instalação de portas, janelas, box para banheiro e espelhos. Solicite seu orçamento conosco via whatsapp">
+    <meta name="keywords" content="vidros temperados, box de banheiro, espelhos, portas de vidro, janelas de vidro, vidraçaria, instalação de vidros, cristal vidros, vidraçaria em Montes Claros Minas Gerais, vidraçaria em Moc">
+    <meta name="author" content="Vidraçaria Cristal Vidros">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidraçaria Cristal Vidros</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(214, 213, 212);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        .imagens {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            max-width: 90%;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .imagens img {
+            width: calc(20% - 10px);
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(206, 205, 205, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+            cursor: pointer;
+        }
+
+        .imagens img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .botoes {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            opacity: 0;
+            animation: fadeInUp 1.2s ease-out forwards;
+            animation-delay: 0.5s;
+        }
+
+        .whatsapp,
+        .baixando {
+            display: inline-flex;
+            align-items: center;
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .whatsapp {
+            background: linear-gradient(45deg, #25d366, #128c7e);
+        }
+
+        .whatsapp:hover {
+            background: #333;
+            transform: scale(1.05);
+        }
+
+        .baixando {
+            background: linear-gradient(45deg, #555, #333);
+        }
+
+        .baixando:hover {
+            background: #222;
+            transform: scale(1.05);
+        }
+
+        /* Modal para zoom na imagem */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .fechar {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            background-color: #fff;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .fechar:hover {
+            background-color: #ddd;
+        }
+
+        /* Animação suave */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .imagens img {
+                width: calc(33.33% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .imagens img {
+                width: calc(50% - 10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="imagens">
+        <img src="resul1.jpeg" alt="Foto 1">
+        <img src="resul2.jpeg" alt="Foto 2">
+        <img src="resul3.jpeg" alt="Foto 3">
+        <img src="resul4.jpeg" alt="Foto 4">
+        <img src="resul5.jpeg" alt="Foto 5">
+        <img src="resul6.jpg.jpeg" alt="Foto 6">
+        <img src="resul7.jpg.jpeg" alt="Foto 7">
+        <img src="resul8.jpg.jpeg" alt="Foto 8">
+        <img src="resul9.jpg.jpeg" alt="Foto 9">
+        <img src="resul10.jpg.jpeg" alt="Foto 10">
+    </div>
+
+    <div class="botoes">
+        <a href="https://wa.me/5538984268482?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento !" target="_blank"
+            class="whatsapp">
+            Entre em contato com a gente
+        </a>
+        <a href="resultados.zip" download class="baixando">Baixar mais resultados</a>
+    </div>
+
+    <!-- Modal para exibir imagem ampliada -->
+    <div class="modal" id="modal">
+        <span class="fechar" onclick="fecharModal()">Fechar</span>
+        <img id="imgModal" src="" alt="Imagem Ampliada">
+    </div>
+
+    <script>
+        const imagens = document.querySelectorAll('.imagens img');
+        const modal = document.getElementById('modal');
+        const imgModal = document.getElementById('imgModal');
+
+        imagens.forEach(img => {
+            img.addEventListener('click', () => {
+                modal.style.display = 'flex';
+                imgModal.src = img.src;
+            });
+        });
+
+        function fecharModal() {
+            modal.style.display = 'none';
+            imgModal.src = '';
+        }
+    </script>
+</body>
+
+</html>
